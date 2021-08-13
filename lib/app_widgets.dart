@@ -1,18 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:mercadagrocopav/src/views/telainicial1/tela_inicial_1.dart';
+import 'package:mercadagrocopav/src/views/tela_escolha_4.dart';
 
-class AppWidget extends StatelessWidget {
+class AppWidget extends StatefulWidget {
   const AppWidget({Key? key}) : super(key: key);
 
   @override
+  _AppWidgetState createState() => _AppWidgetState();
+}
+
+class _AppWidgetState extends State<AppWidget> {
+  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Mercadagro',
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: ListView(
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
           children: [
-            TelaInicial1(),
+            TelaEscolha4(),
           ],
         ),
       ),

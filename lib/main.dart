@@ -1,8 +1,13 @@
+
 import 'package:flutter/material.dart';
 import 'package:mercadagrocopav/app_widgets.dart';
 
 void main() {
-  runApp(AppWidget());
+  runApp(MaterialApp(
+    title: "MercadAgro Copav",
+    debugShowCheckedModeBanner: false,
+    home: AppWidget(),
+  ));
 }
 
 
