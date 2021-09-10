@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mercadagrocopav/src/views/tela_escolha_4.dart';
+import 'package:mercadagrocopav/src/views/tela_inicial_1.dart';
+import 'package:mercadagrocopav/src/views/tela_inicial_2.dart';
+import 'package:mercadagrocopav/src/views/tela_inicial_3.dart';
 
 class AppWidget extends StatefulWidget {
   const AppWidget({Key? key}) : super(key: key);
@@ -11,14 +14,11 @@ class AppWidget extends StatefulWidget {
 class _AppWidgetState extends State<AppWidget> {
   @override
   Widget build(BuildContext context) {
+
+
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            TelaEscolha4(),
-          ],
-        ),
-      ),
+
+      body: TelaEscolha4(),
     );
   }
 }
