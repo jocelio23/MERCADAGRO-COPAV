@@ -45,7 +45,7 @@ class TelaInicial2 extends StatelessWidget {
                 )),
             Center(
               child: Container(
-                width: 325,
+                width: _width * 0.9,
                 height: 48,
                 child: Text(
                   _msgBoasVindas,
@@ -59,12 +59,12 @@ class TelaInicial2 extends StatelessWidget {
             ),
             Positioned(
                 bottom: 70,
-                left: (_width/2) - (_larguraButton/2) + 13,
+                left: (_width/2) - ((_width * 0.8)/2),
                 child: Container(
                   width: _width * 0.8,
                   height: 58,
                   child: SizedBox(
-                    width: _larguraButton + (_width * 0.2),
+                    width: _width * 0.8,
                     height: 58,
                     child: ElevatedButton(
                       onPressed: () {},

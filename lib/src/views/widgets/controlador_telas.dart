@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-import '../tela_inicial_1.dart';
-import '../tela_inicial_2.dart';
 
 class ControladorTelas extends StatelessWidget {
   const ControladorTelas({Key? key,
-   required this.index}) : super(key: key);
+   required this.index,
+    required this.widgets,
+  }) : super(key: key);
 
   final int? index;
+  final List<Widget>? widgets;
   @override
   Widget build(BuildContext context) {
-    var slideList = [TelaInicial1(),TelaInicial2()];
-    return slideList[index!];
+    return widgets != null ? this.widgets![index!] : Container();
   }
 }

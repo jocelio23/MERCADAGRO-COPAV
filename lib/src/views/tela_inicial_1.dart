@@ -12,7 +12,6 @@ class TelaInicial1 extends StatelessWidget {
     final double _width = MediaQuery.of(context).size.width;
 
     var altura = _heigth * 0.05;
-
     return Scaffold(
       backgroundColor: AppCores.white,
       body: SingleChildScrollView(
@@ -46,7 +45,7 @@ class TelaInicial1 extends StatelessWidget {
                   "O mercado do Campo Livre",
                   style: TextStyle(fontSize: 20, color: AppCores.purple_edit),
                 ),
-                Padding(padding: EdgeInsets.only(top: 20)),
+                Padding(padding: EdgeInsets.only(top: 38)),
                 Container(
                   width: _width,
                   height: 159,

@@ -84,7 +84,10 @@ class TelaInicial3 extends StatelessWidget {
                             width: _width * 0.85,
                             height: 56,
                             child: ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.pushReplacementNamed(
+                                    context, TelaInicial3());
+                              },
                               child: Text("Quero criar uma conta",style: TextStyle(
                                 fontWeight: FontWeight.w400,
                                 fontSize: 17,
