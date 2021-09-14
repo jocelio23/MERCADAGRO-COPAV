@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mercadagrocopav/app_widgets.dart';
 import 'package:mercadagrocopav/routes_name.dart';
-import 'package:mercadagrocopav/src/views/tela_inicial_1.dart';
-import 'package:mercadagrocopav/src/views/tela_inicial_3.dart';
+import 'package:mercadagrocopav/src/views/telaacessoprodutor/tela_acesso_produtor.dart';
+import 'package:mercadagrocopav/src/views/telaprincipal/tela_principal.dart';
 
 class Routes{
 
@@ -10,16 +10,16 @@ class Routes{
   static Route<MaterialPageRoute> generateRoute(RouteSettings settings){
       switch(settings.name){
 
-        case TELA_INICIAL_1_PRODUTOR:
+        case TELA_PRINCIPAL:
           return RoutesAnimation(
               builder: (_) => AppWidget(), settings: settings);
 
         case TELA_ACESSO_PRODUTOR:
           return RoutesAnimation(
-              builder: (_) => TelaInicial3(), settings: settings);
+              builder: (_) => TelaAcessoProdutor(), settings: settings);
 
         default:
-          return RoutesAnimation(builder: (_) => TelaInicial1(), settings: settings);
+          return RoutesAnimation(builder: (_) => TelaPrincipal(), settings: settings);
 
       }
   }

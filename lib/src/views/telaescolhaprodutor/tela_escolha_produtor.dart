@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:mercadagrocopav/src/themes/app_cores.dart';
 import 'package:mercadagrocopav/src/themes/app_images.dart';
 
-class TelaEscolha4 extends StatefulWidget {
-  const TelaEscolha4({Key? key}) : super(key: key);
+class TelaEscolhaProdutor extends StatefulWidget {
+  const TelaEscolhaProdutor({Key? key}) : super(key: key);
 
   @override
-  _TelaEscolha4State createState() => _TelaEscolha4State();
+  _TelaEscolhaProdutorState createState() => _TelaEscolhaProdutorState();
 }
 
-class _TelaEscolha4State extends State<TelaEscolha4> {
+class _TelaEscolhaProdutorState extends State<TelaEscolhaProdutor> {
   @override
 
   final String _produtor = "Quero ser produtor";

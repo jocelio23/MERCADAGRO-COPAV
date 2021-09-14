@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mercadagrocopav/routes_name.dart';
 import 'package:mercadagrocopav/src/themes/app_cores.dart';
 import 'package:mercadagrocopav/src/themes/app_images.dart';
 
-class TelaInicial3 extends StatelessWidget {
-  const TelaInicial3({Key? key}) : super(key: key);
+class TelaAcessoProdutor extends StatelessWidget {
+  const TelaAcessoProdutor({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +48,7 @@ class TelaInicial3 extends StatelessWidget {
                       child: Text(
                         _textoApresentacao,
                         textAlign: TextAlign.center,
-                        style: TextStyle(color: Colors.grey[500]),
+                        style: TextStyle(color: AppCores.gray),
                       ),
                     ),
                     Container(
@@ -86,7 +87,7 @@ class TelaInicial3 extends StatelessWidget {
                             child: ElevatedButton(
                               onPressed: () {
                                 Navigator.pushReplacementNamed(
-                                    context, TelaInicial3());
+                                    context, TELA_ESCOLHA_PRODUTOR);
                               },
                               child: Text("Quero criar uma conta",style: TextStyle(
                                 fontWeight: FontWeight.w400,

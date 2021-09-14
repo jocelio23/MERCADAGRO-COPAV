@@ -9,7 +9,7 @@ void main() {
     title: "MercadAgro Copav",
     debugShowCheckedModeBanner: false,
     onGenerateRoute: Routes.generateRoute,
-    initialRoute: TELA_INICIAL_1_PRODUTOR,
+    initialRoute: TELA_PRINCIPAL,
     //home: AppWidget(),
   ));
 }

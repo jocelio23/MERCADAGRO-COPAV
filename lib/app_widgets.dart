@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mercadagrocopav/src/themes/app_cores.dart';
-import 'package:mercadagrocopav/src/views/tela_inicial_1.dart';
-import 'package:mercadagrocopav/src/views/tela_inicial_2.dart';
-import 'package:mercadagrocopav/src/views/widgets/controlador_telas.dart';
+import 'package:mercadagrocopav/src/views/telaprincipal/tela_principal.dart';
+import 'package:mercadagrocopav/src/views/telanovoprodutor/tela_novo_produtor.dart';
+import 'package:mercadagrocopav/src/views/telaprincipal/widgets/controlador_telas.dart';
 import 'dart:async';
 
-import 'package:mercadagrocopav/src/views/widgets/controle_deslizante.dart';
+import 'package:mercadagrocopav/src/views/telaprincipal/widgets/controle_deslizante.dart';
 
 class AppWidget extends StatefulWidget {
   const AppWidget({Key? key}) : super(key: key);
@@ -17,7 +17,7 @@ class AppWidget extends StatefulWidget {
 
 class _AppWidgetState extends State<AppWidget> {
 
-  var _numTelas = ControladorTelas(index: 0,widgets: [TelaInicial1(),TelaInicial2()],);
+  var _numTelas = ControladorTelas(index: 0,widgets: [TelaPrincipal(),TelaNovoProdutor()],);
   PageController _controller = PageController(initialPage: 0);
   int _pagAtual = 0;
 

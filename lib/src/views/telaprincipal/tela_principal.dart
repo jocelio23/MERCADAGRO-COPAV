@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:mercadagrocopav/src/themes/app_cores.dart';
 import 'package:mercadagrocopav/src/themes/app_images.dart';
 
-class TelaInicial1 extends StatelessWidget {
-  const TelaInicial1({Key? key}) : super(key: key);
+class TelaPrincipal extends StatelessWidget {
+  const TelaPrincipal({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

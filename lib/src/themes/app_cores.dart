@@ -9,5 +9,6 @@ class AppCores{
  static const black = Color(0xFF000000);
  static const white = Color(0xFFFFFFFF);
  static const green = Color(0xFF69A03A);
+ static const gray = Color(0xFF7C7D7E);
 
 }
