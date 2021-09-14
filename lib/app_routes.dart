@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mercadagrocopav/app_widgets.dart';
 import 'package:mercadagrocopav/routes_name.dart';
 import 'package:mercadagrocopav/src/views/telaacessoprodutor/tela_acesso_produtor.dart';
+import 'package:mercadagrocopav/src/views/telaescolhaprodutor/tela_escolha_produtor.dart';
 import 'package:mercadagrocopav/src/views/telaprincipal/tela_principal.dart';
 
 class Routes{
@@ -14,12 +15,15 @@ class Routes{
           return RoutesAnimation(
               builder: (_) => AppWidget(), settings: settings);
 
+        case TELA_ESCOLHA_PRODUTOR:
+          return RoutesAnimation(builder: (_) => TelaEscolhaProdutor(), settings: settings);
+
         case TELA_ACESSO_PRODUTOR:
           return RoutesAnimation(
               builder: (_) => TelaAcessoProdutor(), settings: settings);
 
         default:
-          return RoutesAnimation(builder: (_) => TelaPrincipal(), settings: settings);
+          return RoutesAnimation(builder: (_) => AppWidget(), settings: settings);
 
       }
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mercadagrocopav/routes_name.dart';
 import 'package:mercadagrocopav/src/themes/app_cores.dart';
 import 'package:mercadagrocopav/src/themes/app_images.dart';
 
@@ -67,7 +68,10 @@ class TelaNovoProdutor extends StatelessWidget {
                     width: _width * 0.8,
                     height: 58,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushReplacementNamed(
+                            context, TELA_ACESSO_PRODUTOR );
+                      },
                       child: Text("Sou novo por aqui"),
                       style: ElevatedButton.styleFrom(
                         primary: AppCores.yellow,

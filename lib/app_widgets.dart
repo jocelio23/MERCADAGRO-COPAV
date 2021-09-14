@@ -58,7 +58,7 @@ class _AppWidgetState extends State<AppWidget> {
           PageView.builder(
             scrollDirection: Axis.horizontal,
             onPageChanged: _onPageChanged,
-            controller: _controller,
+            controller: _controller.hasClients ? _controller : null,
             itemCount: _numTelas.widgets!.length,
             itemBuilder: (context,i){
               return _numTelas.widgets![i];

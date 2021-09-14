@@ -6,10 +6,12 @@ import 'app_routes.dart';
 
 void main() {
   runApp(MaterialApp(
+
     title: "MercadAgro Copav",
     debugShowCheckedModeBanner: false,
     onGenerateRoute: Routes.generateRoute,
     initialRoute: TELA_PRINCIPAL,
+
     //home: AppWidget(),
   ));
 }

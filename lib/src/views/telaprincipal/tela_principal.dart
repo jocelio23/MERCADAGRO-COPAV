@@ -48,7 +48,7 @@ class TelaPrincipal extends StatelessWidget {
                 Padding(padding: EdgeInsets.only(top: 38)),
                 Container(
                   width: _width,
-                  height: 159,
+                  height: 139,
                   decoration: BoxDecoration(
                       color: AppCores.white,
                       borderRadius: BorderRadius.circular(15)),
